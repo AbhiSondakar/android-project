@@ -56,15 +56,6 @@ val ColorScheme.statusInfo: Color
     get() = Color(0xFF0EA5E9)
 
 @Composable
-fun EcoloopTheme(content: @Composable () -> Unit) {
-    MaterialTheme(
-        colorScheme = LightColors,
-        typography = androidx.compose.material3.Typography(),
-        content = content
-    )
-}
-
-@Composable
 fun EcoloopTheme(
     darkTheme: Boolean = false,
     dynamicColor: Boolean = false,

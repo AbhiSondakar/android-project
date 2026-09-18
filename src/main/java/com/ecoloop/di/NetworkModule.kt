@@ -56,9 +56,8 @@ object NetworkModule {
     @Provides
     @Singleton
     fun provideSessionInterceptor(
-        sessionPrefs: DataStore<Preferences>,
-        @ApplicationContext context: Context
-    ): Interceptor = SessionInterceptor(sessionPrefs, context)
+        sessionPrefs: DataStore<Preferences>
+    ): Interceptor = SessionInterceptor(sessionPrefs)
 
     @Provides
     @Singleton

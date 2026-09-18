@@ -1,6 +1,5 @@
 package com.ecoloop.di
 
-import android.content.Context
 import android.util.Log
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -12,8 +11,7 @@ import okhttp3.Interceptor
 import okhttp3.Response
 
 class SessionInterceptor(
-    private val sessionPrefs: DataStore<Preferences>,
-    private val context: Context
+    private val sessionPrefs: DataStore<Preferences>
 ) : Interceptor {
 
     companion object {

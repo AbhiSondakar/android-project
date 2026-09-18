@@ -28,6 +28,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import androidx.navigation.compose.currentBackStackEntryAsState
 
 data class BottomNavItem(
     val title: String,
@@ -60,7 +61,7 @@ fun HouseholdScaffold(
                 containerColor = MaterialTheme.colorScheme.surface,
                 tonalElevation = 4.dp
             ) {
-                val currentRoute = navController.currentBackStackEntry?.destination?.route
+                val currentRoute = navController.currentBackStackEntryAsState().value?.destination?.route
                 items.forEach { item ->
                     val selected = currentRoute == item.route ||
                         (item.route == "household_home" && currentRoute?.startsWith("household_home") == true)
@@ -136,7 +137,7 @@ fun PartnerScaffold(
                 containerColor = MaterialTheme.colorScheme.surface,
                 tonalElevation = 4.dp
             ) {
-                val currentRoute = navController.currentBackStackEntry?.destination?.route
+                val currentRoute = navController.currentBackStackEntryAsState().value?.destination?.route
                 items.forEach { item ->
                     val selected = currentRoute == item.route || currentRoute?.startsWith(item.route) == true
                     NavigationBarItem(
