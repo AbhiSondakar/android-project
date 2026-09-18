@@ -1,0 +1,16 @@
+package com.ecoloop.ui.theme
+
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Shapes
+import androidx.compose.ui.unit.dp
+
+val AppShapes = Shapes(
+    small = RoundedCornerShape(8.dp),
+    medium = RoundedCornerShape(12.dp),
+    large = RoundedCornerShape(16.dp),
+    extraLarge = RoundedCornerShape(24.dp)
+)
+
+val InputCornerSize = 12.dp
+val CardCornerSize = 16.dp
+val ChipCornerSize = 999.dp

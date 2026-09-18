@@ -1,0 +1,5 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:color/transparent" />
+    <item android:drawable="@color/md_theme_light_primary" android:width="192dp" android:height="192dp" />
+    <item android:drawable="@drawable/ic_app_logo" android:gravity="center" android:width="192dp" android:height="192dp" />
+</layer-list>

@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">ECOLOOP</string>
+    <string name="app_tagline">Household e-waste pickup</string>
+
+    <string name="error_network">Network error. Check your connection.</string>
+    <string name="error_unknown">Something went wrong.</string>
+    <string name="error_unauthorized">Session expired. Please sign in again.</string>
+
+    <string name="btn_sign_in">Sign in</string>
+    <string name="btn_create_account">Create account</string>
+    <string name="btn_submit_device">Submit device</string>
+    <string name="btn_redeem_rewards">Redeem rewards</string>
+    <string name="btn_save_changes">Save changes</string>
+    <string name="btn_sign_out">Sign out</string>
+    <string name="btn_back_to_sign_in">Back to sign in</string>
+    <string name="btn_send_reset_link">Send reset link</string>
+    <string name="btn_detect_location">Detect current location</string>
+    <string name="btn_take_photo">Take photo</string>
+    <string name="btn_from_library">From library</string>
+    <string name="btn_retake">Retake</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_accept">Accept</string>
+    <string name="btn_reject">Reject</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_confirm_reject">Confirm reject</string>
+    <string name="btn_verify_and_complete">Verify and Complete</string>
+
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="label_name">Full name</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_address">Pickup address</string>
+    <string name="label_organization">Organization</string>
+    <string name="label_role">Role</string>
+    <string name="label_service_areas">Service areas</string>
+    <string name="label_capabilities">Capabilities</string>
+    <string name="label_capacity">Capacity</string>
+    <string name="label_notes">Notes</string>
+    <string name="label_category">Category</string>
+    <string name="label_condition">Condition</string>
+    <string name="label_pickup_address">Pickup address</string>
+    <string name="label_current_password">Current password</string>
+    <string name="label_new_password">New password</string>
+
+    <string name="hint_email">you@example.com</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="hint_name">Your name</string>
+    <string name="hint_phone">+1 234 567 8900</string>
+    <string name="hint_address">Street, city, postal code</string>
+    <string name="hint_notes">Additional notes about this job...</string>
+
+    <string name="title_login">Sign in</string>
+    <string name="title_register">Create account</string>
+    <string name="title_forgot_password">Reset password</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_devices">Devices</string>
+    <string name="title_pickups">Pickups</string>
+    <string name="title_points">Points</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_offers">Offers</string>
+    <string name="title_jobs">Jobs</string>
+    <string name="title_job_detail">Job Detail</string>
+    <string name="title_device_detail">Device detail</string>
+    <string name="title_submit_device">Submit device</string>
+    <string name="title_redeem">Redeem points</string>
+
+    <string name="subtitle_login">Household e-waste pickup</string>
+    <string name="subtitle_register">Household self-signup</string>
+    <string name="subtitle_forgot">Enter your email to receive a reset link</string>
+
+    <string name="msg_dont_have_account">Need an account?</string>
+    <string name="msg_already_have_account">Already registered?</string>
+    <string name="msg_sign_up">Sign up</string>
+    <string name="msg_sign_in">Sign in</string>
+
+    <string name="msg_no_devices_yet">No devices submitted yet</string>
+    <string name="msg_no_devices_match">No devices match this filter</string>
+    <string name="msg_no_active_pickups">No active pickups</string>
+    <string name="msg_no_pickup_history">No pickup history</string>
+    <string name="msg_no_points_history">No points history yet</string>
+    <string name="msg_no_pending_offers">No pending offers</string>
+    <string name="msg_no_active_jobs">No active jobs</string>
+    <string name="msg_no_notifications">No notifications.</string>
+
+    <string name="msg_reset_link_sent">If that email is registered, a reset link is on the way.</string>
+
+    <string name="msg_admin_portal_required">Admin users must use the web portal.</string>
+
+    <string name="condition_working">Working</string>
+    <string name="condition_slightly_damaged">Slightly damaged</string>
+    <string name="condition_fully_damaged">Fully damaged</string>
+    <string name="condition_working_desc">Turns on, no visible damage</string>
+    <string name="condition_slightly_damaged_desc">Minor wear, may still work</string>
+    <string name="condition_fully_damaged_desc">Broken, non-functional</string>
+
+    <string name="status_pending">Pending</string>
+    <string name="status_in_progress">In progress</string>
+    <string name="status_accepted">Accepted</string>
+    <string name="status_completed">Done</string>
+    <string name="status_rejected">Rejected</string>
+    <string name="status_cancelled">Cancelled</string>
+
+    <string name="ai_status_pending">Analyzing</string>
+    <string name="ai_status_processing">Processing</string>
+    <string name="ai_status_completed">Done</string>
+    <string name="ai_status_failed">Failed</string>
+
+    <string name="timeline_submitted">Submitted</string>
+    <string name="timeline_assigned">Assigned</string>
+    <string name="timeline_picked_up">Picked up</string>
+    <string name="timeline_completed">Completed</string>
+
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_email">Please enter a valid email</string>
+    <string name="error_password_short">Password must be at least 8 characters</string>
+    <string name="error_image_too_large">Image must be 5MB or smaller</string>
+    <string name="error_image_type">Only JPG, PNG, or WebP images are allowed</string>
+    <string name="error_location_denied">Location access is needed for address detection</string>
+    <string name="error_camera_denied">Camera access is needed to take a photo</string>
+    <string name="error_storage_denied">Photo library access is needed to select an image</string>
+    <string name="error_submission_failed">Could not submit device</string>
+    <string name="error_cancel_failed">Could not cancel pickup</string>
+    <string name="error_verification_failed">Verification failed</string>
+    <string name="error_login_failed">Sign in failed</string>
+    <string name="error_registration_failed">Registration failed</string>
+
+    <string name="msg_condition_matches">Device condition matches description</string>
+    <string name="msg_take_evidence_photo">Take evidence photo</string>
+    <string name="msg_retake_evidence_photo">Retake evidence photo</string>
+
+    <string name="msg_points_available">%1$s points available</string>
+    <string name="msg_points_earned">+%1$s points earned</string>
+
+    <string name="msg_view_ledger">View ledger</string>
+</resources>
