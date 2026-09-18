@@ -20,7 +20,7 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -43,8 +43,8 @@ fun DevicesScreen(
     onDeviceClick: (String) -> Unit
 ) {
     val viewModel: DevicesViewModel = hiltViewModel()
-    val uiState by viewModel.uiState.collectAsState()
-    val filteredDevices by viewModel.filteredDevices.collectAsState()
+    val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+    val filteredDevices by viewModel.filteredDevices.collectAsStateWithLifecycle()
 
     HouseholdScaffold(
         navController = navController,

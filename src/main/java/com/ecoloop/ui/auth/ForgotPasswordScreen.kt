@@ -13,7 +13,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.collectAsState
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -35,7 +35,7 @@ fun ForgotPasswordScreen(
     onResetSent: () -> Unit
 ) {
     val viewModel: AuthViewModel = hiltViewModel()
-    val loginState = viewModel.loginState.collectAsState()
+    val loginState = viewModel.loginState.collectAsStateWithLifecycle()
 
     LaunchedEffect(loginState.value) {
         if (loginState.value is AuthActionResult.Success) {
