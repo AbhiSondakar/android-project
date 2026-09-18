@@ -30,7 +30,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -42,7 +42,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.ecoloop.mobile.R
+import com.ecoloop.R
 import com.ecoloop.ui.components.EcoloopButton
 import com.ecoloop.ui.components.EcoloopCard
 import com.ecoloop.ui.components.EcoloopChip
@@ -63,8 +63,8 @@ fun HomeScreen(
     onLogout: () -> Unit
 ) {
     val viewModel: HouseholdHomeViewModel = hiltViewModel()
-    val uiState by viewModel.uiState.collectAsState()
-    val user by viewModel.user.collectAsState()
+    val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+    val user by viewModel.user.collectAsStateWithLifecycle()
 
     HouseholdScaffold(
         navController = navController,

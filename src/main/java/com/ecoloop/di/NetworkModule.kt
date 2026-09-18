@@ -11,7 +11,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import dagger.hilt.android.qualifiers.ApplicationContext
 import com.ecoloop.data.remote.api.EcoloopApi
-import com.ecoloop.mobile.BuildConfig
+import com.ecoloop.BuildConfig
 import kotlinx.serialization.json.Json
 import okhttp3.CookieJar
 import okhttp3.Interceptor

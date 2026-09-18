@@ -19,6 +19,7 @@ import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -44,13 +45,15 @@ fun HouseholdScaffold(
     floatingActionButton: @Composable (() -> Unit)? = null,
     content: @Composable (PaddingValues) -> Unit
 ) {
-    val items = listOf(
-        BottomNavItem("Home", Icons.Default.Home, "household_home"),
+    val items = remember {
+        listOf(
+            BottomNavItem("Home", Icons.Default.Home, "household_home"),
         BottomNavItem("Devices", Icons.Default.DeviceUnknown, "household_devices"),
         BottomNavItem("Pickups", Icons.Default.LocalShipping, "household_pickups"),
         BottomNavItem("Points", Icons.Default.Stars, "household_points"),
         BottomNavItem("Profile", Icons.Default.Person, "household_profile")
-    )
+        )
+    }
 
     Scaffold(
         topBar = {

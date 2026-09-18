@@ -51,7 +51,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.rememberImagePainter
-import com.ecoloop.mobile.R
+import com.ecoloop.R
 import com.ecoloop.domain.model.DeviceCondition
 import com.ecoloop.ui.components.EcoloopButton
 import com.ecoloop.ui.components.EcoloopTextField
