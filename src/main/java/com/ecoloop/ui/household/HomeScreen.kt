@@ -51,11 +51,10 @@ import com.ecoloop.ui.components.HouseholdScaffold
 import com.ecoloop.ui.components.Skeleton
 import com.ecoloop.ui.components.TimelineView
 import androidx.navigation.NavHostController
-import androidx.navigation.compose.rememberNavController
 
 @Composable
 fun HomeScreen(
-    navController: NavHostController = androidx.navigation.compose.rememberNavController(),
+    navController: NavHostController,
     onDeviceClick: (String) -> Unit,
     onPickupsClick: () -> Unit,
     onSubmitDeviceClick: () -> Unit,
